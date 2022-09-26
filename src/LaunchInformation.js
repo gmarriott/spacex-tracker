@@ -42,9 +42,9 @@ const launchArticle = function(props){
 const LaunchInformation = (props) => {
     return <div className="flex justify-center mb-4">
       <div className="flex flex-col md:flex-row md:w-11/12 rounded-lg overflow-hidden bg-stone-100 shadow-lg">
-        <img className="h-48 w-full md:max-w-[300px] p-6 pt-8" src={imageSrc(props.launch.links)} alt="launchimg" />
+        <img className="h-48 w-full md:max-w-[300px] p-6 pt-8" src={imageSrc(props.launch.links)} alt="" />
         <div className="p-6 flex-row w-full">
-          <h1 className="text-gray-900 text-xl font-bold mb-3 underline">Launch Name: {props.launch.name}</h1>
+          <h2 className="text-gray-900 text-xl font-bold mb-3 underline">Launch Name: {props.launch.name}</h2>
           <p className="text-gray-900 text-lg font-bold">Launch Date:</p> <p className="text-gray-900 text-lg">{launchDate(props.launch.date_utc)}</p>
           <p className="text-gray-900 text-lg font-bold">Launch Successful:</p> <p className="text-gray-900 text-lg mb-3">{launchSuccess(props.launch.success)}</p>
           <p className="text-gray-900 text-lg font-bold">Launch Details:</p> <p className="text-gray-900 text-lg mb-3">{launchDescription(props.launch.details)}</p>

@@ -35,9 +35,9 @@ function App() {
             <Particles options={particlesOptions} init={particlesInit}/>
             <header className="App-header">
                 <img src={logo} className="tracker-logo mb-3" alt="logo"/>
-                <p className="flex justify-center mb-5">
+                <h1 className="flex justify-center mb-5">
                     Track all available launches from the SpaceX stations!
-                </p>
+                </h1>
                 <div className="flex justify-center w-11/12">
                 <ul className="rounded-lg w-full">
                 {launches.map((launch) => (
